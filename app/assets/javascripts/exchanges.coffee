@@ -7,6 +7,12 @@ $(document).ready ->
     document.getElementById('target_currency').value = source_currency
     getExchange()
 
+  $("#source_currency").change ->
+    getExchange()
+
+  $("#target_currency").change ->
+    getExchange()
+    
   $("#amount").keyup ->
     getExchange()
 
